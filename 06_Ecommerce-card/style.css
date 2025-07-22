@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    /* box-sizing: border-box; */
+    background-color: #001422;
+    color: #ffff;
+}
+
+main {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.card-container {
+    max-width: 400px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 18px;
+    background: linear-gradient(148deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.circle {
+    border-radius: 100%;
+    position: absolute;
+}
+
+.circle-1 {
+    width: 140px;
+    height: 140px;
+    background-image: radial-gradient(69.62% 69.62% at 50% 50%, #EA8BFA 0%, #7526F5 100%);
+    top: -20px;
+    left: -70px;
+}
+
+.circle-2 {
+    width: 330px;
+    height: 330px;
+    top: 20px;
+    right: -250px;
+    background-image: radial-gradient(63.62% 63.62% at 50% 50%, #FF00C7 0%, #BD95FF 0.01%, #A661FF 32.29%, #6100FF 98.59%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.circle-3 {
+    width: 230px;
+    height: 230px;
+    background-image: radial-gradient(67.47% 67.47% at 50% 50%, #FED0FF 0%, #7F00FF 100%);
+    bottom: -20px;
+    left: -190px;
+}
+
+.card-items {
+    max-width: 368px;
+    margin: auto;
+    border: 0.74px solid #FFFFFF4D;
+    border-radius: 12px;
+}
+
+.card-items>img {
+    width: 100%;
+}
+
+.beginner-container {
+    padding: 20px;
+}
+
+.heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tag {
+    background-color: #F1C6443D;
+    color: #FFD147;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-weight: 500;
+}
+
+.heart-icon {
+    cursor: pointer;
+}
+
+.beginner-container h3 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.beginner-container>p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+}
+
+.star-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.rating-value {
+    color: #F1C644;
+}
+
+.cart-container {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 30px;
+    border-top: 1px solid #FFFFFF4D;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cart-container:hover {
+    opacity: 1;
+}
+
+.cart-container>span {
+    color: #fff;
+    font-size: 18px;
+    /* font-family: inherit; */
+}
