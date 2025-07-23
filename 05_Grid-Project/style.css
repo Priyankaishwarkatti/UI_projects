@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 25px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    row-gap: 24px;
+    margin-inline: 25px;
+    margin-bottom: 170px;
+    max-width: 1200px;
+    margin-inline: auto;
+    grid-template-areas: 
+            'Purple'
+            'Orange'
+            'Blue'
+            'Green'
+            'Violet'
+        ;
+    gap: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.box {
+    min-height: 200px;
+    font-size: 3rem;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    background-color: #BA56F6;
+    grid-area: Purple;
+}
+
+.box-2 {
+    background-color: #FF6161;
+    grid-area: Orange;
+}
+
+.box-3 {
+    background-color: #505CCA;
+    grid-area: Blue;
+}
+
+.box-4 {
+    background-color: #3DAD99;
+    grid-area: Green;
+}
+
+.box-5 {
+    background-color: #BE3690;
+    grid-area: Violet;
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-areas: 
+            'Purple Purple'
+            'Green Blue'
+            'Orange Blue'
+            'Violet Violet'
+        ;
+        gap: 32px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* .box-1 {
+        background-color: #BA56F6;
+        grid-column-start: span 2;
+    }
+
+    .box-3 {
+        background-color: #505CCA;
+        grid-row-start: span 2;
+    }
+
+    .box-5 {
+        background-color: #BE3690;
+        grid-column-start: span 2;
+    } */
+
+    @media (min-width: 850px) {
+
+        .container {
+            /* grid-template-columns: 1fr 1fr 1fr 1fr  ; */
+            grid-template-areas: 
+                'Purple Purple Orange Blue'
+                'Green Violet Violet Blue '
+                ;
+        }
+    }
+}
