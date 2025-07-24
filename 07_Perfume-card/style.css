@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F3EAE3;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    background-color: #fff;
+    color: #6c7289ff;
+    max-width: 600px;
+    margin-inline: 15px;
+    border-radius: 12px;
+    display: flex;
+    font-family: Montserrat;
+}
+
+.perfume-img {
+    width: 50%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.perfume-img2 {
+    display: none;
+}
+
+.card-content {
+    padding: 35px;
+}
+
+.perfume-tag {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-block: 5px;
+}
+
+.heading {
+    color: black;
+    font-family: Fraunces, serif;
+}
+
+.perfume-content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.price-tag {
+    margin-block: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.real-price {
+    color: #3c8067ff;
+    font-size: 2rem;
+    font-family: Fraunces, serif;
+    font-weight: 700;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.cart-button {
+    width: 100%;
+    background-color: #3c8067ff;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (max-width: 620px) {
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .card-container {
+        background-color: #fff;
+        max-width: 350px;
+        flex-direction: column;
+    }
+
+    .perfume-img {
+        display: none;
+    }
+
+    .perfume-img2 {
+        display: block;
+        max-width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .perfume-tag {
+        margin: 0;
+    }
+
+    .heading {
+        font-size: 28px;
+        margin-block: 12px;
+    }
+
+    .perfume-content {
+        margin-block: 15px;
+    }
+
+    .price-tag {
+        margin-block: 10px;
+    }
+
+    .real-price {
+        font-size: 28px;
+    }
+
+}
