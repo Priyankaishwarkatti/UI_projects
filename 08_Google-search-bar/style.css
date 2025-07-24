@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202124;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.search-container {
+    min-height: 60vh;
+    padding-inline: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.search-text {
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 650px;
+    border: 2px solid #5F6368;
+    border-radius: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-img {
+    width: 20px;
+}
+
+.close-icon {
+    display: none;
+}
+
+.search-bar:focus-within .close-icon {
+    display: block;
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 16px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+    background-color: #303134;
+    border-color: #303134;
+}
+
+.doodle-shapes {
+    position: fixed;
+    right: 32px;
+    bottom: 0;
+}
