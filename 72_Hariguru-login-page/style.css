@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #010c12;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+form {
+    max-width: 530px;
+    background-color: #17384e;
+    /* min-height: 500px; */
+    width: 100%;
+    border-radius: 7px;
+}
+
+.container{
+    color: #FFFF;  
+    margin-bottom: 10px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid #2d4a5e;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.login-container h2 {
+    margin: 0;
+    font-family: "Philosopher", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.input {
+    padding: 20px 24px;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #2d4a5e;
+} 
+
+input::placeholder {
+    font-size: 18px;
+    color: #86a0b2;
+}
+
+p {
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-button {
+    text-align: center;
+    margin: 24px;
+}
+
+button {
+    margin: auto;
+    max-width: 120px;
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #ff7010;
+    font-size: 16px;
+    color: #ffff;
+    cursor: pointer;
+    border: none
+}
+
+button:hover {
+    background-color: #e8650e;
+}
+
+.create-account {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+
+.create-account span {
+    color: #ff7010;
+    cursor: pointer;
+}
+
+
+
+
